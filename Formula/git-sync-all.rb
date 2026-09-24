@@ -1,8 +1,8 @@
 class GitSyncAll < Formula
   desc "Synchronize a Git superproject and all of its submodules"
   homepage "https://github.com/koniz-dev/git-sync-all"
-  url "https://github.com/koniz-dev/git-sync-all/releases/download/v0.5.0/git-sync-all-0.5.0.tar.gz"
-  sha256 "6ee54b67260535b98708a15228d03010296ff5a264856b5da369d9a15c77becc"
+  url "https://github.com/koniz-dev/git-sync-all/releases/download/v0.7.0/git-sync-all-0.7.0.tar.gz"
+  sha256 "078fa01713c9fd2de049448be56f21bb98f45e90bc503376386de6a7e625a2ca"
   license "MIT"
 
   depends_on "git"
@@ -14,6 +14,6 @@ class GitSyncAll < Formula
   end
 
   test do
-    assert_match "git-sync-all 0.5.0", shell_output("#{bin}/git-sync-all --version")
+    assert_match "git-sync-all 0.7.0", shell_output("#{bin}/git-sync-all --version")
   end
 end
